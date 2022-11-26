@@ -1,0 +1,15 @@
+.sidebar {
+  width: 240px;
+  border-top-left-radius: unset;
+  border-bottom-right-radius: unset;
+  border-bottom-left-radius: unset;
+}
+
+.mainContent {
+  border-bottom-right-radius: unset;
+  border-bottom-left-radius: unset;
+
+  @media screen and (max-width: 1448px) {
+    border-top-right-radius: unset;
+  }
+}

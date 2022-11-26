@@ -1,0 +1,53 @@
+:root {
+  --acme-space-large: #{$space-large};
+  --acme-space-common: #{$space-common};
+  --acme-space-small: #{$space-small};
+  --acme-space-tiny: #{$space-tiny};
+
+  --acme-color-body: #{$body-background};
+  --acme-color-body-contrast: #{$body-foreground};
+
+  --acme-color-content: #{$content-background};
+  --acme-color-content-contrast: #{$content-foreground};
+
+  --acme-color-primary-darker: #{mix(black, $primary, 12%)};
+  --acme-color-primary: #{$primary};
+  --acme-color-primary-lighter: #{mix(white, $primary, 12%)};
+
+  --acme-color-primary-contrast: #{$primary-contrast};
+
+  --acme-color-secondary: #{$secondary};
+  --acme-color-secondary-contrast: #{$secondary-contrast};
+
+  --acme-color-tertiary: #{$tertiary};
+  --acme-color-tertiary-contrast: #{$tertiary-contrast};
+
+  --acme-color-state-info: #{$state-info};
+  --acme-color-state-info-contrast: #{$state-info-contrast};
+
+  --acme-color-state-warning: #{$state-warning};
+  --acme-color-state-warning-contrast: #{$state-warning-contrast};
+
+  --acme-color-state-error: #{$state-error};
+  --acme-color-state-error-contrast: #{$state-error-contrast};
+
+  --acme-color-state-disabled: #{$state-disabled};
+  --acme-color-state-disabled-contrast: #{$state-disabled-contrast};
+
+  --acme-radiis-sharp: 3px;
+  --acme-radiis-common: 6px;
+  --acme-radiis-round: 32px;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --acme-color-body: #{$body-dark-background};
+    --acme-color-body-contrast: #{$body-dark-foreground};
+
+    --acme-color-content: #{$content-dark-background};
+    --acme-color-content-contrast: #{$content-dark-foreground};
+
+    --acme-color-state-disabled: #212121;
+    --acme-color-state-disabled-contrast: #555;
+  }
+}

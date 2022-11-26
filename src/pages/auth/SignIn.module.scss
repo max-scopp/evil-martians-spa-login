@@ -1,0 +1,32 @@
+.pageLayout {
+  main {
+    align-self: center;
+  }
+}
+
+.signInForm {
+  margin: var(--acme-space-large) 0;
+}
+
+.forgotPasswordLink {
+  place-self: center;
+
+  text-align: center;
+  font-size: 80%;
+
+  opacity: 0.5;
+}
+
+.formLogo {
+  place-self: center;
+
+  padding: var(--acme-space-small);
+  margin-bottom: var(--acme-space-common);
+
+  height: 80px;
+}
+
+.submitButton {
+  margin-top: 1.2em;
+  margin-bottom: 0.8em;
+}

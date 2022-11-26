@@ -1,0 +1,43 @@
+.headerProfile {
+  display: flex;
+  justify-content: center;
+
+  margin: var(--acme-space-tiny);
+  padding: var(--acme-space-tiny);
+
+  user-select: none;
+  cursor: pointer;
+
+  border-radius: var(--acme-radiis-common);
+
+  will-change: background-color;
+  transition: none cubic-bezier(0.5, 0, 0, 1) 240ms;
+  transition-property: background-color;
+
+  &:focus,
+  &:hover {
+    outline: unset;
+
+    background-color: var(
+      --acme-header-user-profile-background,
+      rgb(0 0 0 / 12%)
+    );
+  }
+}
+
+.userFullName {
+  align-self: center;
+  margin: 0 var(--acme-space-small);
+}
+
+.userImageContainer {
+  display: inline-flex;
+
+  border-radius: var(--acme-radiis-common);
+  overflow: hidden;
+
+  img {
+    width: 48px;
+    height: 48px;
+  }
+}

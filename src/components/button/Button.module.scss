@@ -1,0 +1,49 @@
+.button {
+  padding: 0 var(--acme-space-common);
+
+  background-color: var(--acme-button-background, var(--acme-color-primary));
+  color: var(--acme-button-contrast, var(--acme-color-primary-contrast));
+
+  border: unset;
+
+  border-radius: var(--acme-button-radii, var(--acme-radiis-common));
+
+  line-height: 2.6;
+  font-size: 16px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  will-change: transform;
+
+  transition: none cubic-bezier(0.5, 0, 0, 1) 80ms;
+  transition-property: transform;
+
+  &:hover {
+    background-color: var(
+      --acme-button-hover-background,
+      var(--acme-color-primary-lighter)
+    );
+  }
+
+  &:active {
+    background-color: var(
+      --acme-button-active-background,
+      var(--acme-color-primary-darker)
+    );
+
+    transform: translate3d(0, 2px, 0);
+  }
+
+  &:disabled {
+    background-color: var(
+      --acme-button-disabled-background,
+      var(--acme-color-state-disabled)
+    );
+
+    color: var(
+      --acme-button-disabled-contrast,
+      var(--acme-color-state-disabled-contrast)
+    );
+  }
+}

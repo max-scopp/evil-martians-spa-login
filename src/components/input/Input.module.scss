@@ -1,0 +1,36 @@
+$input-margin: 1ch;
+
+.input {
+  border: unset;
+
+  padding: 0.3em 1ch;
+
+  margin: $input-margin 0;
+  line-height: 2;
+
+  background-color: var(--acme-input-background, var(--acme-color-body));
+  color: var(--acme-input-contrast, var(--acme-color-body-contrast));
+
+  border-radius: var(--acme-input-radii, var(--acme-radiis-common));
+  outline-color: var(--acme-color-primary);
+
+  &:disabled {
+    background-color: var(
+      --acme-input-disabled-background,
+      var(--acme-color-state-disabled)
+    );
+    color: var(
+      --acme-input-disabled-contrast,
+      var(--acme-color-state-disabled-contrast)
+    );
+  }
+}
+
+.label {
+  margin-top: $input-margin * 1.5;
+  line-height: 1.5;
+
+  font-size: 14px;
+
+  opacity: 0.6;
+}

@@ -1,0 +1,29 @@
+.alert {
+  display: block;
+  padding: var(--acme-space-small) var(--acme-space-common);
+
+  background-color: var(--acme-alert-background, var(--acme-color-body));
+  color: var(--acme-alert-contrast, var(--acme-color-body-contrast));
+
+  border-radius: var(--acme-radiis-common);
+
+  font-size: 14px;
+  font-weight: 600;
+
+  user-select: none;
+}
+
+.alertVariant_error {
+  --acme-alert-background: var(--acme-color-state-error);
+  --acme-alert-contrast: var(--acme-color-state-error-contrast);
+}
+
+.alertVariant_warning {
+  --acme-alert-background: var(--acme-color-state-warning);
+  --acme-alert-contrast: var(--acme-color-state-warning-contrast);
+}
+
+.alertVariant_info {
+  --acme-alert-background: var(--acme-color-state-info);
+  --acme-alert-contrast: var(--acme-color-state-info-contrast);
+}

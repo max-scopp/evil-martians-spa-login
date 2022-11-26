@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  place-content: center space-between;
+
+  background-color: var(--acme-color-primary);
+  color: var(--acme-color-primary-contrast);
+
+  box-shadow: 0 -10px 4px 10px rgb(0 0 0 / 42%),
+    0 -10px 12px 10px rgb(0 0 0 / 24%);
+
+  padding: 0 var(--acme-space-common);
+
+  height: 60px;
+  grid-column: 1/-1;
+
+  nav {
+    display: flex;
+    place-items: center;
+
+    > ul {
+      padding: unset;
+      margin: unset;
+
+      list-style-type: none;
+      display: flex;
+    }
+  }
+}

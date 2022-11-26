@@ -1,0 +1,15 @@
+.card {
+  position: relative;
+  display: grid;
+
+  background-color: var(--acme-card-background, var(--acme-color-content));
+  color: var(--acme-card-contrast, var(--acme-color-content-contrast));
+
+  border-radius: 3px;
+  overflow: hidden;
+
+  padding: var(--acme-card-padding-y, var(--acme-space-small))
+    var(--acme-card-padding-x, var(--acme-space-common));
+
+  box-shadow: 0 1px 2px rgb(0 0 0 / 32%), 0 1px 12px rgb(0 0 0 / 12%);
+}

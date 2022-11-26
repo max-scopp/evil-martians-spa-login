@@ -1,0 +1,37 @@
+$body-background: #efefef;
+$body-foreground: #121212;
+
+$body-dark-background: #181818;
+$body-dark-foreground: #fff;
+
+$content-background: #fff;
+$content-foreground: $body-foreground;
+
+$content-dark-background: #282828;
+$content-dark-foreground: $body-dark-foreground;
+
+$primary: #4b7bec;
+$primary-contrast: white;
+
+$secondary: #20bf6b;
+$secondary-contrast: white;
+
+$tertiary: #fed330;
+$tertiary-contrast: #231300;
+
+$state-info: #45aaf2;
+$state-info-contrast: #fff;
+
+$state-warning: #fed330;
+$state-warning-contrast: #231300;
+
+$state-error: #eb3b5a;
+$state-error-contrast: #fff;
+
+$state-disabled: #e0e2e4;
+$state-disabled-contrast: #121212;
+
+$space-large: 40px;
+$space-common: 20px;
+$space-small: 10px;
+$space-tiny: 3px;
